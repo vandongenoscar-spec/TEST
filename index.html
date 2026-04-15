@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="aurora" aria-hidden="true"></div>
+
   <header class="site-header">
     <nav class="container nav">
       <a class="logo" href="#home">Oscar van Dongen</a>
@@ -22,10 +24,10 @@
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
+  <main id="home" class="layout-shell">
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-intro glass-panel">
           <p class="eyebrow">Paris Career Coaching</p>
           <h1>Build a career that fits your ambition and your life.</h1>
           <p class="lead">
@@ -34,7 +36,8 @@
           </p>
           <a class="btn" href="#contact">Book a Discovery Call</a>
         </div>
-        <aside class="hero-card" aria-label="Quick facts">
+
+        <aside class="hero-card glass-panel" aria-label="Quick facts">
           <h2>Why clients choose Oscar</h2>
           <ul>
             <li>10+ years of coaching and talent strategy experience</li>
@@ -46,25 +49,28 @@
     </section>
 
     <section id="services" class="section container">
-      <h2>Coaching Services</h2>
+      <div class="section-heading">
+        <p class="eyebrow">Signature Journey</p>
+        <h2>Coaching Services</h2>
+      </div>
       <div class="cards">
-        <article class="card">
+        <article class="card glass-panel">
           <h3>Career Direction</h3>
           <p>Gain clarity on your strengths, values, and next chapter with a practical roadmap tailored to your goals.</p>
         </article>
-        <article class="card">
+        <article class="card glass-panel highlighted-card">
           <h3>Interview & Personal Brand</h3>
           <p>Refine your story, CV, and interview strategy so you can communicate your value with confidence.</p>
         </article>
-        <article class="card">
+        <article class="card glass-panel">
           <h3>Leadership Growth</h3>
           <p>Develop executive presence, influence, and strategic communication for your current or future leadership role.</p>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section section-alt">
-      <div class="container about-grid">
+    <section id="about" class="section container">
+      <div class="about-grid glass-panel">
         <div>
           <h2>About Oscar van Dongen</h2>
           <p>
@@ -85,20 +91,25 @@
     </section>
 
     <section id="contact" class="section container">
-      <h2>Start your next move</h2>
-      <p class="contact-text">Ready to work with a career coach in Paris? Send a quick message to schedule a discovery call.</p>
-      <form class="contact-form" action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+      <div class="contact-shell">
+        <div>
+          <p class="eyebrow">Begin your transition</p>
+          <h2>Start your next move</h2>
+          <p class="contact-text">Ready to work with a career coach in Paris? Send a quick message to schedule a discovery call.</p>
+        </div>
+        <form class="contact-form glass-panel" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-        <label for="goals">What are you working toward?</label>
-        <textarea id="goals" name="goals" rows="4" placeholder="Share your goals briefly..."></textarea>
+          <label for="goals">What are you working toward?</label>
+          <textarea id="goals" name="goals" rows="4" placeholder="Share your goals briefly..."></textarea>
 
-        <button class="btn" type="submit">Send message</button>
-      </form>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
     </section>
   </main>
 
