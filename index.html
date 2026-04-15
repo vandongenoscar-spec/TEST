@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oscar van Dongen | Career Coach Paris</title>
+  <meta name="description" content="Oscar van Dongen is a Paris-based career coach helping professionals navigate transitions, interviews, and leadership growth." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="logo" href="#home">Oscar van Dongen</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Paris Career Coaching</p>
+          <h1>Build a career that fits your ambition and your life.</h1>
+          <p class="lead">
+            I’m <strong>Oscar van Dongen</strong>, a career coach based in Paris. I help international professionals clarify goals,
+            stand out in interviews, and move into meaningful next roles.
+          </p>
+          <a class="btn" href="#contact">Book a Discovery Call</a>
+        </div>
+        <aside class="hero-card" aria-label="Quick facts">
+          <h2>Why clients choose Oscar</h2>
+          <ul>
+            <li>10+ years of coaching and talent strategy experience</li>
+            <li>Specialized in transitions, promotions, and global careers</li>
+            <li>Sessions available in-person in Paris or online worldwide</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Coaching Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Career Direction</h3>
+          <p>Gain clarity on your strengths, values, and next chapter with a practical roadmap tailored to your goals.</p>
+        </article>
+        <article class="card">
+          <h3>Interview & Personal Brand</h3>
+          <p>Refine your story, CV, and interview strategy so you can communicate your value with confidence.</p>
+        </article>
+        <article class="card">
+          <h3>Leadership Growth</h3>
+          <p>Develop executive presence, influence, and strategic communication for your current or future leadership role.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About Oscar van Dongen</h2>
+          <p>
+            Based in the heart of Paris, Oscar works with ambitious professionals across tech, finance, consulting,
+            and creative industries. His coaching combines strategic career planning with actionable tools that clients
+            can apply immediately.
+          </p>
+          <p>
+            Whether you're preparing for a pivot, aiming for promotion, or re-entering the market, Oscar helps you
+            move with purpose and momentum.
+          </p>
+        </div>
+        <blockquote>
+          “Oscar helped me move from uncertainty to a confident offer in less than 8 weeks.”
+          <cite>— Senior Product Manager, Paris</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Start your next move</h2>
+      <p class="contact-text">Ready to work with a career coach in Paris? Send a quick message to schedule a discovery call.</p>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="goals">What are you working toward?</label>
+        <textarea id="goals" name="goals" rows="4" placeholder="Share your goals briefly..."></textarea>
+
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Oscar van Dongen — Career Coach, Paris</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
